@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (weatherFragment.isAdded()) {
-            getSupportFragmentManager().beginTransaction().remove(weatherFragment).commit();
+            getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.exit_to_left, R.anim.exit_to_right).remove(weatherFragment).commit();
             locationInput.setText("");
         } else {
             super.onBackPressed();
@@ -92,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
                                 double longitude = response.body().getResultsList().get(0).
                                         getGeometry().getGoogleLocation().getLongitude();
                                 getWeather(latitude, longitude);
+                            }else if(response.body().getStatus().trim().equals("ZERO_RESULTS")){
+                                Toast.makeText(MainActivity.this, "Address not found", Toast.LENGTH_SHORT).show();
                             }else{
                                 googleMapsmakeApiRequest(address, apiKey);
                             }
