@@ -27,4 +27,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //Retrofit For API Calls
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //Gson and Gson Converter that will allow us to convert JSON Objects from the backend to Gson, which can be understood by Java.
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.android.support:design:27.1.1'
 }

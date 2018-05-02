@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="search">Search</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="dark_sky">Powered by:\nDark Sky</string>
+    <string name="weather_for">Weather For\n%1$s</string>
+    <string name="temperature">%1$d℉</string>
+    <string name="precip_num">%1$d%%</string>
+    <string name="high"> %1$d℉</string>
+    <string name="low">/%1$d℉</string>
+    <string name="precipitation">precip:</string>
+    <string name="summary">Clear day</string>
+    <string name="google_base_url">http://maps.googleapis.com</string>
+    <string name="darksky_base_url">https://api.darksky.net</string>
+    <string name="google_maps_api_key">AIzaSyAsuF-Co4Qwj6NLZSYGQGh3TvOGmKlevgY</string>
+    <string name="darksky_api_key">a6722f2f9f10873af58e9d5ded96a038</string>
 </resources>
